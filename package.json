@@ -1,0 +1,16 @@
+{
+  "name": "sqs-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "serverless-bundle test"
+  },
+  "author": "Ray",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-bundle": "^6.0.0",
+    "serverless-deployment-bucket": "^1.6.0",
+    "serverless-offline": "^12.0.4"
+  }
+}

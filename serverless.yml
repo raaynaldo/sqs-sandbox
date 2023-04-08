@@ -1,0 +1,15 @@
+service: sqs-sandbox
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  region: ${opt:region, 'us-east-1'}
+  stage: ${opt:stage, 'dev'}
+  deploymentBucket:
+    name: sqs-sandbox-build-artifacts
+
+plugins:
+  - serverless-bundle
+  - serverless-deployment-bucket
+  - serverless-offline
